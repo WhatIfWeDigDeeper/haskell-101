@@ -1,0 +1,151 @@
+1
+00:00:00,110 --> 00:00:05,600
+Hello everyone! My name is Georgi and I'm
+one of the TAs for this course and in this
+
+2
+00:00:05,600 --> 00:00:12,600
+video I want to show you how to install GHC
+and in particular the Haskell Platform. To
+
+3
+00:00:12,679 --> 00:00:20,300
+install, first we have to find the Haskell
+Platform, so let us Google that. It's immediately
+
+4
+00:00:20,350 --> 00:00:27,350
+the first hit. On this website we are offered
+the choice of the system that we want to install
+
+5
+00:00:27,500 --> 00:00:35,400
+on. I'm using a Mac right now, so I will click
+on Mac. The download link is up here - Haskell
+
+6
+00:00:35,400 --> 00:00:42,400
+Platform 2014. I'm downloading it now. In
+fact, I have already downloaded this file,
+
+7
+00:00:43,130 --> 00:00:49,989
+so let's just go ahead and click on it. The
+installer starts by double clicking on it
+
+8
+00:00:49,989 --> 00:00:56,579
+and then we are presented with the usual menu.
+We click on continue. It takes more than 1GB
+
+9
+00:00:56,579 --> 00:01:03,579
+of space, which we are more than happy to
+use for Haskell. Then we click install.
+
+10
+00:01:05,560 --> 00:01:13,620
+We input our password to authorize Haskell to
+install and wait for it to finish.
+
+11
+00:01:19,980 --> 00:01:26,200
+There it is! It also redirects us to the documentation
+page for the Haskell Platform where you can
+
+12
+00:01:26,240 --> 00:01:33,400
+read up on all the ins and outs and the things
+you can do with it. So let's start with some
+
+13
+00:01:33,400 --> 00:01:43,799
+simple examples. I have 2 prompts open here.
+In one I will open up my editor - which is,
+
+14
+00:01:43,799 --> 00:01:53,299
+of course, vi. I have a file called test.hs
+- recall that .hs is the extension for Haskell
+
+15
+00:01:53,299 --> 00:02:01,639
+files. In this file I have defined 2 functions,
+as mentioned in the lecture, double and quadruple.
+
+16
+00:02:02,420 --> 00:02:13,020
+Now I would like to see them in action, so
+I type "ghci test.hs". We see a lot of text being
+
+17
+00:02:13,020 --> 00:02:19,480
+printed out, but the most important thing
+is right here - Ok, modules loaded: Main.
+
+18
+00:02:19,480 --> 00:02:27,500
+Now we can start testing the functions by
+simply typing in their name: double 10, which
+
+19
+00:02:27,660 --> 00:02:38,180
+makes it 20. Also notice that we can use tab
+completion. So for quadruple 30 we get 120.
+
+20
+00:02:40,280 --> 00:02:46,800
+Let's go back to the editor that we have on
+the left and simply add 2 new functions as
+
+21
+00:02:46,810 --> 00:02:53,810
+we have also seen in the lecture, in this
+case: factorial and average. 
+
+22
+00:02:53,980 --> 00:03:01,760
+GHCi is still running in our case and all we need to do
+to load the new functions is type :reload.
+
+23
+00:03:01,769 --> 00:03:10,129
+GHCi tells us that everything went ok, so
+now we can go ahead and test these functions.
+
+24
+00:03:10,740 --> 00:03:13,700
+Let's say factorial of 10. 
+
+25
+00:03:20,360 --> 00:03:26,640
+Something's not going right! My bad! 
+I haven't saved the file
+
+26
+00:03:26,650 --> 00:03:34,160
+yet, so I do need to save it before it can
+be reloaded. I reload once again. Modules
+
+27
+00:03:34,160 --> 00:03:43,020
+are loaded. Now I try factorial of 10 and
+I get the right answer. Let's try average
+
+28
+00:03:43,030 --> 00:03:50,030
+of a list of 1, 2, 3, 4 and 5. I get the number 3. 
+
+29
+00:03:50,440 --> 00:03:53,620
+This is a very simple introduction to how
+
+30
+00:03:53,620 --> 00:04:00,620
+to install the Haskell Platform, how to use
+it, how to load files and how to start editing.
+
+31
+00:04:00,799 --> 00:04:02,060
+Thank you!
+
