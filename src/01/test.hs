@@ -1,6 +1,6 @@
---> ghci
---> :cd directory
---> :load fileName
+-- > ghci
+-- > :cd directory
+-- > :load fileName
 
 import Data.Char
 
@@ -42,8 +42,12 @@ f xs = take 3 (reverse xs)
 abs' :: Int -> Int
 abs' n = if n >= 0 then n else -n
 
-signum' n = if n < 0 then -1 else
-            if n == 0 then 0 else 1
+-- signum' n = if n < 0 then -1 else
+--            if n == 0 then 0 else 1
+signum' n
+  | n < 0 = -1
+  | n == 0 = 0
+  | otherwise = 1
 
 halve :: [a] -> ([a],[a])
 halve xs = (take (n `div` 2) xs, drop (n `div` 2) xs)
@@ -60,7 +64,7 @@ safetail2 [] = []
 safetail2 (_:xs) = xs
 
 safetail3 :: [a] -> [a]
-safetail3 (xs)
+safetail3 xs
     | null xs = []
     | otherwise = tail xs
 
@@ -410,4 +414,3 @@ iterate' f = unfold (const False) id f
 
 --church :: (a -> a) -> a -> a
 --church 0 = \s z -> z
-
