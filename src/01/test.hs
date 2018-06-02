@@ -1,6 +1,7 @@
--- > ghci
+-- > ghci or ghci src/01/test.hs
 -- > :cd directory
 -- > :load fileName
+-- > :quit
 
 import Data.Char
 
@@ -20,10 +21,14 @@ n = a `div` length xs
     xs = [1..5]
 
 qsort [] = []
-qsort (x : xs) = qsort larger ++ [x] ++ qsort smaller
+qsort (x : xs) = qsort smaller ++ [x] ++ qsort larger
   where smaller = [a | a <- xs, a <= x]
         larger = [b | b <- xs, b > x]
 
+qsortDesc [] = []
+qsortDesc (x : xs) = qsortDesc larger' ++ [x] ++ qsortDesc smaller'
+  where smaller' = [a | a <- xs, a <= x]
+        larger' = [b | b <- xs, b > x]
 
 second xs = head (tail xs)
 

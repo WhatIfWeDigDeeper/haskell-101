@@ -1,2 +1,2 @@
 # haskell-101
-101 from EdX functional programming course in Haskell
+[EdX Introduction to Functional Programming in Haskell](https://courses.edx.org/courses/course-v1:DelftX+FP101x+3T2015/course/)
