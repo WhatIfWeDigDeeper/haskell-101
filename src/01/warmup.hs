@@ -1,0 +1,2 @@
+-- concatenate
+greet = "hello" ++ " " ++ "world"

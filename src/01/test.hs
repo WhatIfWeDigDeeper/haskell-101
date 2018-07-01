@@ -1,7 +1,12 @@
 -- > ghci or ghci src/01/test.hs
 -- > :cd directory
 -- > :load fileName
--- > :quit
+-- > :reload or :r
+-- > :type expr or :t
+-- > :? - show all commands
+-- > :q
+
+-- > groovysh
 
 import Data.Char
 
@@ -14,6 +19,11 @@ factorial n = product [1..n]
 average ns = sum ns `div` length ns
 
 lasty xs = xs !! (length xs - 1)
+
+init' xs = reverse (tail (reverse xs))
+
+summy [] = 0 -- base case when empty
+summy (x:xs) = x + summy xs
 
 n = a `div` length xs
   where
@@ -43,6 +53,10 @@ palindrome xs = reverse xs == xs
 twice f x = f (f x)
 
 f xs = take 3 (reverse xs)
+
+-- tuples
+-- fst (1, 3)
+-- snd (1, 3)
 
 abs' :: Int -> Int
 abs' n = if n >= 0 then n else -n
