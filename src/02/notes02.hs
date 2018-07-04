@@ -10,4 +10,7 @@ incr = add' 1
 -- dad = true
 palindrome xs = reverse xs == xs
 
+-- twice :: (t -> t) -> t -> t
+twice f x = f (f x)
+
 
