@@ -7,4 +7,7 @@ add' x y = x + y
 -- returns the add = (1 + n) function waiting for n
 incr = add' 1
 
+-- dad = true
+palindrome xs = reverse xs == xs
+
 
