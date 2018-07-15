@@ -31,3 +31,23 @@ not maps False to True and True to False
 
     -- for
     1:(2:(3:(4:[])))
+
+## Lambda Expressions
+
+    add :: Int -> Int -> Int
+    add x y = x + y
+
+    -- shows fn takes x, returns fn takes y
+    addLambda = \x -> (\y -> x + y)
+
+Avoid naming functions used only once. **Naming is hard**.
+
+### Sections (operators)
+
+    1+2
+    (+) 1 2
+    // curried, fn + given 1 and expects second arg
+    (1+) 2
+    (+2) 1
+
+    successor = (1+)

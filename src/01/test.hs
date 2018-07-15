@@ -58,6 +58,14 @@ f xs = take 3 (reverse xs)
 -- fst (1, 3)
 -- snd (1, 3)
 
+third :: [a] -> a
+third xs = head (tail (tail xs))
+
+thirdIndex xs = xs !! 2
+
+-- thirdPattern :: [a] -> [a]
+thirdPattern (_:_:x:_) = x
+
 abs' :: Int -> Int
 abs' n = if n >= 0 then n else -n
 
@@ -101,6 +109,17 @@ safetail5
 (|||) :: Bool -> Bool -> Bool
 False ||| b = b
 True ||| _ = True
+
+or1 :: Bool -> Bool -> Bool
+or1 b c
+    | c == False = b
+    | otherwise = True
+
+or2 False False = False
+or2 _ _ = True
+
+-- original
+or3 b c = if b == c then b else True
 
 (&&&) :: Bool -> Bool -> Bool
 a &&& b = if a then b else False

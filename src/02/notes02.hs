@@ -58,4 +58,22 @@ lowerCount xs = length  (lowers xs)
 upperCount :: [Char] -> Int
 upperCount xs = length (uppers xs)
 
+add2 :: Int -> Int -> Int
+add2 x y = x + y
 
+addLambda = \x -> (\y -> x + y)
+
+odds :: Int -> [Int]
+odds n = map f [0..n-1]
+         where f x = x*2 + 1
+
+oddsLambda n = map (\x -> x*2 + 1) [0..n-1]
+
+-- sections
+successor = (1+)
+
+reciprocation = (1/)
+
+doubling = (*2)
+
+halving = (/2)
