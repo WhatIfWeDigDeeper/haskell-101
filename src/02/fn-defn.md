@@ -23,3 +23,11 @@
 
 Good example of input output table
 not maps False to True and True to False
+
+### Lists
+
+    -- syntactic sugar
+    [1,2,3,4]
+
+    -- for
+    1:(2:(3:(4:[])))

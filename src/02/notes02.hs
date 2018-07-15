@@ -33,3 +33,29 @@ not' True = False
 and' :: Bool -> Bool -> Bool
 and' x y | x == True    = y
 and' x _ | x == False   = False
+
+head' :: [a] -> a
+head' (x:xs) = x
+
+tail' :: [Char] -> [Char]
+tail' (_:xs) = xs
+
+isLower :: Char -> Bool
+isLower c = c >= 'a' && c <= 'z'
+
+isUpper :: Char -> Bool
+isUpper c = c >= 'A' && c <= 'Z'
+
+lowers :: [Char] -> [Char]
+lowers xs = [x | x <- xs, isLower x]
+
+uppers :: [Char] -> [Char]
+uppers xs = [x | x <- xs, isUpper x]
+
+lowerCount :: [Char] -> Int
+lowerCount xs = length  (lowers xs)
+
+upperCount :: [Char] -> Int
+upperCount xs = length (uppers xs)
+
+
