@@ -51,3 +51,9 @@ Avoid naming functions used only once. **Naming is hard**.
     (+2) 1
 
     successor = (1+)
+
+### comprehensions
+
+"The term comprehension comes from the axiom of comprehension in set theory, which makes precise the idea of constructing a set by selecting all values that satisfy a particular property."
+
+Hutton, Graham. Programming in Haskell (p. 56). Cambridge University Press. Kindle Edition. 

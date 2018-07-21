@@ -58,6 +58,9 @@ lowerCount xs = length  (lowers xs)
 upperCount :: [Char] -> Int
 upperCount xs = length (uppers xs)
 
+letterCounter :: Char -> [Char] -> Int
+letterCounter x xs = length [x'| x' <- xs, x == x']
+
 add2 :: Int -> Int -> Int
 add2 x y = x + y
 
