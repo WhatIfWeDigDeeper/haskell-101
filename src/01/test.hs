@@ -83,6 +83,18 @@ halve xs = (take (n `div` 2) xs, drop (n `div` 2) xs)
 halve2 :: [a] -> ([a],[a])
 halve2 xs = splitAt (length xs `div` 2) xs
 
+halve3 :: [a] -> ([a],[a])
+halve3 xs = (take (n `div` 2) xs, drop (n `div` 2) xs)
+    where n = length xs
+
+halve4 :: [a] -> ([a],[a])
+halve4 xs = splitAt (length xs `div` 2) xs
+
+halve5 :: [a] -> ([a],[a])
+halve5 xs = (take n xs, drop n xs)
+    where n = length xs `div` 2
+
+
 safetail :: [a] -> [a]
 safetail xs = if null xs then [] else tail xs
 
