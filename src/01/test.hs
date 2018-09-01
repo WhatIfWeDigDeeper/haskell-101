@@ -315,7 +315,7 @@ msort :: Ord a => [a] -> [a]
 msort [] = []
 msort [x] = [x]
 msort xs = merge (msort ys) (msort zs)
-    where (ys, zs) = halve xs
+    where (ys, zs) = halve' xs
 
 isPositive :: Integer -> Bool
 isPositive n = n >= 0
